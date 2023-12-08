@@ -1,5 +1,4 @@
 import math
-from collections import defaultdict
 
 def get_puzzle(path):
     with open(path) as f:
