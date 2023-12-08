@@ -45,29 +45,7 @@ def main():
             sum1 += score
     
     
-
+    print(int(sum1))
     print(sum(cards2))
-
-   
-            
-    
-    
-    
-
-        
-
-    cards = [1] * len(file1)
-    for i, line in enumerate(file1):
-        x, y = map(str.split, line.split('|'))
-        n = len(set(x) & set(y))
-        
-        for j in range(i + 1, min(i + 1 + n, len(line))):
-            cards[j] += cards[i]
-    #print(cards)
-    
-    req = sum(cards)
-    #print(req)
-
-
 
 main()
